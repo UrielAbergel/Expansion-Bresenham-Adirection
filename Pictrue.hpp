@@ -12,12 +12,7 @@
 using namespace std;
 
 
-struct RGB {
-    uint8_t red, green, blue;
-public:
-    RGB(): red(0), green(0), blue(0) {}
-    RGB(uint8_t red, uint8_t green, uint8_t blue): red(red), green(green), blue(blue) {}
-};
+
 
 template<typename T = unsigned char>
 class Pictrue {
@@ -26,6 +21,11 @@ private:
    vector<vector<T>> _Pic ;
    unsigned int _rows;
    unsigned int _cols;
+    void draw_A_lineX1(int x1 ,int y1 ,int x2,int y2 , T value);
+    void draw_A_lineX2(int x1 ,int y1 ,int x2,int y2 , T value);
+    void draw_A_lineY1(int x1 ,int y1 ,int x2,int y2 , T value);
+    void draw_A_lineY2(int x1 ,int y1 ,int x2,int y2 , T value);
+
 
 public:
     Pictrue(unsigned row ,unsigned cols,const vector<vector<T>> pic): _rows(row),_cols(cols),_Pic(row, std::vector<T>(cols))
@@ -35,7 +35,10 @@ public:
 
     virtual ~Pictrue()
     {
-
+        for (int i = 0; i <_rows ; ++i)
+        {
+            _Pic.erase(_Pic.begin(),_Pic.end());
+        }
     }
 
     T& operator[](std::pair<int,int> location);

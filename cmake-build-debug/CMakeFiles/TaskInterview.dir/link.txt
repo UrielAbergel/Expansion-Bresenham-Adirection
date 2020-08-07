@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TaskInterview.dir/main.cpp.o CMakeFiles/TaskInterview.dir/Pictrue.cpp.o  -o TaskInterview 

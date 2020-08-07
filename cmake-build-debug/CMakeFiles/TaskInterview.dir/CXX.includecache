@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/uriel/CLionProjects/TaskInterview/Pictrue.cpp
+Pictrue.hpp
+/home/uriel/CLionProjects/TaskInterview/Pictrue.hpp
+iostream
+-
+
+/home/uriel/CLionProjects/TaskInterview/Pictrue.hpp
+cstdint
+-
+vector
+/home/uriel/CLionProjects/TaskInterview/vector
+
+/home/uriel/CLionProjects/TaskInterview/main.cpp
+iostream
+-
+Pictrue.cpp
+/home/uriel/CLionProjects/TaskInterview/Pictrue.cpp
+
