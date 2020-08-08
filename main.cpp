@@ -25,10 +25,10 @@ void bresenham(int x1, int y1, int x2, int y2)
 }
 
 int main() {
-    vector<vector<int>> T(6 , vector<int>(20));
-    Pictrue<int> t(6,20,T);
+    vector<vector<int>> T(20 , vector<int>(20));
+    Pictrue<int> t(20,20,T);
     t[{3,3}] = 8;
-    int x1 = 15, y1 = 2, x2 = 2, y2 = 5;
+    int x1 = 18, y1 = 2, x2 = 2, y2 = 8;
 //
     t.displayPic();
   t.draw_A_line(x1, y1, x2, y2 , 4);

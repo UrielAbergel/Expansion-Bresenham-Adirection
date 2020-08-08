@@ -5,7 +5,7 @@
 #ifndef TASKINTERVIEW_PICTRUE_H
 #define TASKINTERVIEW_PICTRUE_H
 
-#include <cstdint>
+
 #include "vector"
 
 
@@ -19,27 +19,19 @@ class Pictrue {
 
 private:
    vector<vector<T>> _Pic ;
-   unsigned int _rows;
-   unsigned int _cols;
-    void draw_A_lineX1(int x1 ,int y1 ,int x2,int y2 , T value);
-    void draw_A_lineX2(int x1 ,int y1 ,int x2,int y2 , T value);
-    void draw_A_lineY1(int x1 ,int y1 ,int x2,int y2 , T value);
-    void draw_A_lineY2(int x1 ,int y1 ,int x2,int y2 , T value);
+   uint  _rows;
+   uint _cols;
+   void draw_ver_line(uint x1 ,uint y1 , uint x2, uint y2 ,T value);
+
 
 
 public:
-    Pictrue(unsigned row ,unsigned cols,const vector<vector<T>> pic): _rows(row),_cols(cols),_Pic(row, std::vector<T>(cols))
+    Pictrue(uint row ,uint cols,const vector<vector<T>> pic): _rows(row),_cols(cols),_Pic(row, std::vector<T>(cols))
     {
         _Pic = pic; // the operator = is deep copy in vector class
     }
 
-    virtual ~Pictrue()
-    {
-        for (int i = 0; i <_rows ; ++i)
-        {
-            _Pic.erase(_Pic.begin(),_Pic.end());
-        }
-    }
+    virtual ~Pictrue() = default ;
 
     T& operator[](std::pair<int,int> location);
 
