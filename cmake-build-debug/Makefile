@@ -143,33 +143,6 @@ TaskInterview/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/build
 .PHONY : TaskInterview/fast
 
-Picture.o: Picture.cpp.o
-
-.PHONY : Picture.o
-
-# target to build an object file
-Picture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.o
-.PHONY : Picture.cpp.o
-
-Picture.i: Picture.cpp.i
-
-.PHONY : Picture.i
-
-# target to preprocess a source file
-Picture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.i
-.PHONY : Picture.cpp.i
-
-Picture.s: Picture.cpp.s
-
-.PHONY : Picture.s
-
-# target to generate assembly for a file
-Picture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.s
-.PHONY : Picture.cpp.s
-
 Test.o: Test.cpp.o
 
 .PHONY : Test.o
@@ -233,9 +206,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TaskInterview"
-	@echo "... Picture.o"
-	@echo "... Picture.i"
-	@echo "... Picture.s"
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"

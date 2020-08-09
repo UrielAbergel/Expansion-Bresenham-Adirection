@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TaskInterview.dir/Picture.cpp.o"
   "CMakeFiles/TaskInterview.dir/Test.cpp.o"
   "CMakeFiles/TaskInterview.dir/main.cpp.o"
   "TaskInterview"
