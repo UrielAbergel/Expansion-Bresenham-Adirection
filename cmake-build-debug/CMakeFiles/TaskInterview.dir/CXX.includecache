@@ -19,6 +19,6 @@ vector
 /home/uriel/CLionProjects/TaskInterview/main.cpp
 iostream
 -
-Picture.cpp
-/home/uriel/CLionProjects/TaskInterview/Picture.cpp
+Picture.hpp
+/home/uriel/CLionProjects/TaskInterview/Picture.hpp
 

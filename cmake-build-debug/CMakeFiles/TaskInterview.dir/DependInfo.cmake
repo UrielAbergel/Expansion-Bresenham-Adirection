@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/uriel/CLionProjects/TaskInterview/Picture.cpp" "/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles/TaskInterview.dir/Picture.cpp.o"
+  "/home/uriel/CLionProjects/TaskInterview/Test.cpp" "/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles/TaskInterview.dir/Test.cpp.o"
   "/home/uriel/CLionProjects/TaskInterview/main.cpp" "/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles/TaskInterview.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

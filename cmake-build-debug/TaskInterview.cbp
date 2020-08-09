@@ -88,6 +88,9 @@
 		<Unit filename="/home/uriel/CLionProjects/TaskInterview/Picture.hpp">
 			<Option target="TaskInterview"/>
 		</Unit>
+		<Unit filename="/home/uriel/CLionProjects/TaskInterview/Test.cpp">
+			<Option target="TaskInterview"/>
+		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/TaskInterview/main.cpp">
 			<Option target="TaskInterview"/>
 		</Unit>

@@ -4,7 +4,8 @@
 CMakeFiles/TaskInterview.dir/Picture.cpp.o: ../Picture.cpp
 CMakeFiles/TaskInterview.dir/Picture.cpp.o: ../Picture.hpp
 
-CMakeFiles/TaskInterview.dir/main.cpp.o: ../Picture.cpp
+CMakeFiles/TaskInterview.dir/Test.cpp.o: ../Test.cpp
+
 CMakeFiles/TaskInterview.dir/main.cpp.o: ../Picture.hpp
 CMakeFiles/TaskInterview.dir/main.cpp.o: ../main.cpp
 
