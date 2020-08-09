@@ -32,9 +32,7 @@ void Picture<T>::draw_A_line(int x1, int y1, int x2, int y2 ,T value)
         this->draw_ver_line(x1,y1,x2,y2,value);
         return;
     }
-    bool flagY;
-    int m_new;
-    if(x1 > x2)
+    if(y1 > y2)
     {
         // swap (x1,y1) with (x2,y2)
         int temp;
@@ -45,38 +43,43 @@ void Picture<T>::draw_A_line(int x1, int y1, int x2, int y2 ,T value)
         y1 = y2;
         y2 = temp;
     }
-    if(y1 < y2)
-    {
-        m_new = 2 * (y2 - y1);
-        flagY = true;
+    if(x2 < y2) {
+        int dx,
+                dy = y2 - y1,
+                x = x1,
+                eps = 0;
+        if (x1 < x2) dx = x2 - x1;
+        else dx = x1 - x2;
+
+        for (int y = y1; y <= y2; y++) {
+            _Pic.at(x).at(y) = value;
+            eps += dx;
+            if ((eps << 1) >= dy) {
+                if (x2 > x1) x++;
+                else x--;
+                eps -= dy;
+            }
+        }
     }
     else
     {
-        m_new = 2 * (y1 - y2);
-        flagY = false;
-    }
+        int dx  = x2 - x1,
+                dy  = y2 - y1,
+                y   = y1,
+                eps = 0;
 
-    int slope_error_new = m_new - (x2 - x1);
-    for (int x = x1, y = y1; x <= x2 && y <= max(y1,y2); x++)
-    {
-        this->_Pic.at(y).at(x) = value ;
-        cout << "(" << x << "," << y << ")\n";
-
-
-        // Add slope to increment angle formed
-        slope_error_new += m_new;
-
-        // Slope error reached limit, time to
-        // increment y and update slope error.
-        if (slope_error_new >= 0)
-        {
-            if(flagY) y++;
-            else y--;
-            slope_error_new  -= 2 * (x2 - x1);
+        for ( int x = x1; x <= x2; x++ )  {
+            _Pic.at(x).at(y) = value;
+            eps += dy;
+            if ( (eps << 1) >= dx )  {
+                y++;  eps -= dx;
+            }
         }
     }
-   this->_Pic.at(max(x1,x2)).at(max(y1,y2)) = value;
-}
+    }
+
+
+
 
 template<typename T>
 void Picture<T>::displayPic() {
