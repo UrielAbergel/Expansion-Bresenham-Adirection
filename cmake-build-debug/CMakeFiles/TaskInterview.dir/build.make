@@ -90,29 +90,29 @@ CMakeFiles/TaskInterview.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TaskInterview.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/TaskInterview/main.cpp -o CMakeFiles/TaskInterview.dir/main.cpp.s
 
-CMakeFiles/TaskInterview.dir/Pictrue.cpp.o: CMakeFiles/TaskInterview.dir/flags.make
-CMakeFiles/TaskInterview.dir/Pictrue.cpp.o: ../Pictrue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TaskInterview.dir/Pictrue.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TaskInterview.dir/Pictrue.cpp.o -c /home/uriel/CLionProjects/TaskInterview/Pictrue.cpp
+CMakeFiles/TaskInterview.dir/Picture.cpp.o: CMakeFiles/TaskInterview.dir/flags.make
+CMakeFiles/TaskInterview.dir/Picture.cpp.o: ../Picture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TaskInterview.dir/Picture.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TaskInterview.dir/Picture.cpp.o -c /home/uriel/CLionProjects/TaskInterview/Picture.cpp
 
-CMakeFiles/TaskInterview.dir/Pictrue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TaskInterview.dir/Pictrue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/TaskInterview/Pictrue.cpp > CMakeFiles/TaskInterview.dir/Pictrue.cpp.i
+CMakeFiles/TaskInterview.dir/Picture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TaskInterview.dir/Picture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/TaskInterview/Picture.cpp > CMakeFiles/TaskInterview.dir/Picture.cpp.i
 
-CMakeFiles/TaskInterview.dir/Pictrue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TaskInterview.dir/Pictrue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/TaskInterview/Pictrue.cpp -o CMakeFiles/TaskInterview.dir/Pictrue.cpp.s
+CMakeFiles/TaskInterview.dir/Picture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TaskInterview.dir/Picture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/TaskInterview/Picture.cpp -o CMakeFiles/TaskInterview.dir/Picture.cpp.s
 
 # Object files for target TaskInterview
 TaskInterview_OBJECTS = \
 "CMakeFiles/TaskInterview.dir/main.cpp.o" \
-"CMakeFiles/TaskInterview.dir/Pictrue.cpp.o"
+"CMakeFiles/TaskInterview.dir/Picture.cpp.o"
 
 # External object files for target TaskInterview
 TaskInterview_EXTERNAL_OBJECTS =
 
 TaskInterview: CMakeFiles/TaskInterview.dir/main.cpp.o
-TaskInterview: CMakeFiles/TaskInterview.dir/Pictrue.cpp.o
+TaskInterview: CMakeFiles/TaskInterview.dir/Picture.cpp.o
 TaskInterview: CMakeFiles/TaskInterview.dir/build.make
 TaskInterview: CMakeFiles/TaskInterview.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uriel/CLionProjects/TaskInterview/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TaskInterview"

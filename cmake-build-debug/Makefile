@@ -143,32 +143,32 @@ TaskInterview/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/build
 .PHONY : TaskInterview/fast
 
-Pictrue.o: Pictrue.cpp.o
+Picture.o: Picture.cpp.o
 
-.PHONY : Pictrue.o
+.PHONY : Picture.o
 
 # target to build an object file
-Pictrue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Pictrue.cpp.o
-.PHONY : Pictrue.cpp.o
+Picture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.o
+.PHONY : Picture.cpp.o
 
-Pictrue.i: Pictrue.cpp.i
+Picture.i: Picture.cpp.i
 
-.PHONY : Pictrue.i
+.PHONY : Picture.i
 
 # target to preprocess a source file
-Pictrue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Pictrue.cpp.i
-.PHONY : Pictrue.cpp.i
+Picture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.i
+.PHONY : Picture.cpp.i
 
-Pictrue.s: Pictrue.cpp.s
+Picture.s: Picture.cpp.s
 
-.PHONY : Pictrue.s
+.PHONY : Picture.s
 
 # target to generate assembly for a file
-Pictrue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Pictrue.cpp.s
-.PHONY : Pictrue.cpp.s
+Picture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskInterview.dir/build.make CMakeFiles/TaskInterview.dir/Picture.cpp.s
+.PHONY : Picture.cpp.s
 
 main.o: main.cpp.o
 
@@ -206,9 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TaskInterview"
-	@echo "... Pictrue.o"
-	@echo "... Pictrue.i"
-	@echo "... Pictrue.s"
+	@echo "... Picture.o"
+	@echo "... Picture.i"
+	@echo "... Picture.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

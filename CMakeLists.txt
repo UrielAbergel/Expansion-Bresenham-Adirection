@@ -3,4 +3,4 @@ project(TaskInterview)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(TaskInterview main.cpp Pictrue.cpp Pictrue.h)
+add_executable(TaskInterview main.cpp Picture.cpp Picture.hpp)
