@@ -18,9 +18,9 @@ private:
     uint _cols;
 
 
- /*
-  * draw_vertical_line Produces a straight line within the matrix both Length & Width
-  */
+    /*
+     * draw_vertical_line Produces a straight line within the matrix both Length & Width
+     */
 //------------------------------------------------------------------------
 
     void draw_vertical_line(int x1, int y1, int x2, int y2, T value)
@@ -43,9 +43,9 @@ private:
     void draw_std_lower_case(int x1, int y1, int x2, int y2, T value)
     {
         int dx = x1 - x2,
-            dy = y2 - y1,
-            x = x1,
-            eps = 0;
+                dy = y2 - y1,
+                x = x1,
+                eps = 0;
 
         for (int y = y1 ; y <= y2 ; y++)
         {
@@ -63,12 +63,12 @@ private:
  */
 //------------------------------------------------------------------------
 
-    void draw_rotate_ver_lower_case(int x1, int y1, int x2, int y2, T value)
+    void draw_rotate_lower_case(int x1, int y1, int x2, int y2, T value)
     {
         int dx = x1 - x2,
-            dy = y2 - y1,
-            y = y1,
-            eps = 0;
+                dy = y2 - y1,
+                y = y1,
+                eps = 0;
 
         for (int x = x1 ; x >= x2 ; x--)
         {
@@ -89,10 +89,10 @@ private:
     void draw_std(int x1, int y1, int x2, int y2, T value)
     {
         int dx,
-            dy = y2 - y1,
-            x = x1,
-            eps = 0;
-            dx = abs(x2 - x1);
+                dy = y2 - y1,
+                x = x1,
+                eps = 0;
+        dx = abs(x2 - x1);
 
         for (int y = y1 ; y <= y2 ; y++)
         {
@@ -110,12 +110,12 @@ private:
  */
 //------------------------------------------------------------------------
 
-    void draw_rotate_ver(int x1, int y1, int x2, int y2, T value)
+    void draw_rotate(int x1, int y1, int x2, int y2, T value)
     {
         int dx = x2 - x1,
-            dy = y2 - y1,
-            y = y1,
-            eps = 0;
+                dy = y2 - y1,
+                y = y1,
+                eps = 0;
 
         for (int x = x1 ; x <= x2 ; x++)
         {
@@ -129,7 +129,7 @@ private:
         }
     }
 /*
- * Check which algorithm makes better density
+ * Check which algorithm makes better density for negative m(slope)
  */
 //------------------------------------------------------------------------
 
@@ -137,7 +137,6 @@ private:
     {
         int countSTD = 0;
         int countROT = 0;
-
         /*
         * check the density in algo num 1
         */
@@ -182,7 +181,63 @@ private:
             return -1;
     }
 
-//-----------------------------------public---------------------
+
+/*
+ * Check which algorithm makes better density for positive m(slope)
+ */
+//-------------------------------------------------------------------------------------------
+
+    int check_std(int x1, int y1, int x2, int y2)
+    {
+        int countSTD = 0;
+        int countROT = 0;
+
+        /*
+        * check the density in algo num 1
+        */
+        int dx,
+            dy = y2 - y1,
+            x = x1,
+            eps = 0;
+            dx = abs(x2 - x1);
+
+        for (int y = y1 ; y <= y2 ; y++)
+        {
+            countSTD++;
+            eps += dx;
+            if ((eps << 1) >= dy) // eps * 2
+            {
+                x++;
+                eps -= dy;
+            }
+        }
+
+        /*
+         * check the density in algo num 2
+         */
+         dx = x2 - x1;
+                dy = y2 - y1;
+                int y = y1;
+                eps = 0;
+
+        for (int x = x1 ; x <= x2 ; x++)
+        {
+            countROT++;
+            eps += dy;
+            if ((eps << 1) >= dx) // eps * 2
+            {
+                y++;
+                eps -= dx;
+            }
+        }
+
+        if (countSTD > countROT)
+            return 1;
+        else
+            return -1;
+    }
+
+//=====================================public============================
 public:
 
     picture(uint row, uint cols) : _rows(row), _cols(cols), _Pic(row, std::vector<T>(cols)){} // row/col constructor
@@ -196,7 +251,7 @@ public:
      */
 //------------------------------------------------------------------------
 
-    T &operator[](std::pair<int,int> location)
+    T& operator[](std::pair<int,int> location)
     {
         try
         {
@@ -273,8 +328,8 @@ public:
         if (y2 < y1)
         {
             //swap points
-           swap(x1,x2);
-           swap(y1,y2);
+            swap(x1,x2);
+            swap(y1,y2);
         }
         if (x1 == x2 || y1 == y2)
         {
@@ -282,15 +337,15 @@ public:
             return;
         }
         if(x1 < x2)
-            if (x2 < y2)
+            if (check_std(x1,y1,x2,y2) == 1)
                 draw_std(x1, y1, x2, y2, value);
             else
-                draw_rotate_ver(x1, y1, x2, y2, value);
+                draw_rotate(x1, y1, x2, y2, value);
         else
-            if (check(x1,y1,x2,y2) == 1)
-                draw_std_lower_case(x1, y1, x2, y2, value);
-            else
-                draw_rotate_ver_lower_case(x1,y1,x2,y2,value);
+        if (check(x1,y1,x2,y2) == 1)
+            draw_std_lower_case(x1, y1, x2, y2, value);
+        else
+            draw_rotate_lower_case(x1,y1,x2,y2,value);
     }
 /*
  * A function that prints the matrix to the terminal
@@ -311,6 +366,9 @@ public:
         cout << "=====================" << endl;
     }
 
+    /*
+     * getters
+     */
     uint get_rows()
     {
         return this->_rows;
@@ -321,5 +379,3 @@ public:
         return this->_cols;
     }
 };
-
-

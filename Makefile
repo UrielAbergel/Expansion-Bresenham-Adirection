@@ -1,13 +1,25 @@
+#!make -f
 
+CXX=clang++-9
+CXXFLAGS=-std=c++2a
 
-run: test
-	./$^
+HEADERS=picture.hpp
+OBJECTS=
+# NOTE: there are no objects -- all code is in the header files, since this is template code!
 
-test: Test.o $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o test
+all: test demo
 
-%.o: %.cpp $(HEADERS)
-	$(CXX) $(CXXFLAGS) --compile $< -o $@
+test: TestRunner.o Test.o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) Test.cpp TestRunner.cpp -o test
+
+Test.o: Test.cpp TestRunner.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) --compile Test.cpp TestRunner.cpp
+
+demo: demo.o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) demo.o -o demo
+
+demo.o: demo.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) --compile demo.cpp
 
 clean:
-	rm -f *.o test
+	rm -f *.o test demo
