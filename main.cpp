@@ -105,7 +105,7 @@ void linev10(
 int main() {
     vector<vector<int>> T(10 , vector<int>(7));
     Picture<int> t(10,7,T );
-    int x1 =5, y1 =4, x2 =2, y2 = 6 ;
+    int x1 =8, y1 =0, x2 =6, y2 = 6 ;
 
 
     t.displayPic();
@@ -113,9 +113,9 @@ int main() {
     t.displayPic();
 
 
-linev5(x1,y1,x2,y2);
+//linev5R(x1,y1,x2,y2);
 linev6R(x1,y1,x2,y2);
-linev10(x1,y1,x2,y2);
+//linev10(x1,y1,x2,y2);
 
     return 0;
 }
