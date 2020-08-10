@@ -82,13 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/uriel/CLionProjects/TaskInterview/Picture.hpp">
-			<Option target="TaskInterview"/>
-		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/TaskInterview/Test.cpp">
 			<Option target="TaskInterview"/>
 		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/TaskInterview/main.cpp">
+		<Unit filename="/home/uriel/CLionProjects/TaskInterview/demo.cpp">
+			<Option target="TaskInterview"/>
+		</Unit>
+		<Unit filename="/home/uriel/CLionProjects/TaskInterview/picture.hpp">
 			<Option target="TaskInterview"/>
 		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/TaskInterview/CMakeLists.txt">

@@ -3,6 +3,6 @@
 
 CMakeFiles/TaskInterview.dir/Test.cpp.o: ../Test.cpp
 
-CMakeFiles/TaskInterview.dir/main.cpp.o: ../Picture.hpp
-CMakeFiles/TaskInterview.dir/main.cpp.o: ../main.cpp
+CMakeFiles/TaskInterview.dir/demo.cpp.o: ../demo.cpp
+CMakeFiles/TaskInterview.dir/demo.cpp.o: ../picture.hpp
 

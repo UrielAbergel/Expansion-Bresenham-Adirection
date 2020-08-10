@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TaskInterview.dir/Test.cpp.o"
-  "CMakeFiles/TaskInterview.dir/main.cpp.o"
+  "CMakeFiles/TaskInterview.dir/demo.cpp.o"
   "TaskInterview"
   "TaskInterview.pdb"
 )

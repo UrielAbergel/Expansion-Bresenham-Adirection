@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/TaskInterview.dir/main.cpp.o CMakeFiles/TaskInterview.dir/Test.cpp.o  -o TaskInterview 
+/usr/bin/c++  -g   CMakeFiles/TaskInterview.dir/demo.cpp.o CMakeFiles/TaskInterview.dir/Test.cpp.o  -o TaskInterview 

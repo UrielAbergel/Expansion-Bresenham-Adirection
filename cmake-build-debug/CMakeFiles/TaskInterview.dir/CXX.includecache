@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/uriel/CLionProjects/TaskInterview/Picture.hpp
+/home/uriel/CLionProjects/TaskInterview/demo.cpp
+iostream
+-
+picture.hpp
+/home/uriel/CLionProjects/TaskInterview/picture.hpp
+
+/home/uriel/CLionProjects/TaskInterview/picture.hpp
 iostream
 -
 vector
 -
-
-/home/uriel/CLionProjects/TaskInterview/main.cpp
-iostream
--
-Picture.hpp
-/home/uriel/CLionProjects/TaskInterview/Picture.hpp
 
