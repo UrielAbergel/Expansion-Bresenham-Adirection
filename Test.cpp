@@ -1,16 +1,15 @@
-////
-//// Created by uriel on 09/08/2020.
-////
 //
-//#include "doctest.h"
+// Created by uriel on 09/08/2020.
 //
-//TEST_CASE("bla bla ")
-//{
-//    CHECK("");
-//    CHECK_NOTHROW();
-//    CHECK_THROWS();
-//}
-//
-//
-//
-//
+
+#include "doctest.hpp"
+#include "Picture.hpp"
+
+TEST_CASE("check range")
+{
+CHECK_THROWS(Picture<int> t(8,8););
+}
+
+
+
+
