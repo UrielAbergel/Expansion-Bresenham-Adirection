@@ -104,7 +104,7 @@ I built a number of functions that check if there is a line between the given po
 ### the main function:
 `bool check_the_draw(picture<T> & r ,int x1 ,int y1,int x2,int y2)`
 
-* explain : The function starts from (x1, y1) and checks in each iteration whether there is a number around the number we are on, deletes the number we are on and continues to the next number, and so on until it reaches (x2, y2) if we could not reach (x2, y2 ) This is a sign that the drawing we made did not work and the line was not created correctly between the two points and that means the slope was "too deep" and the number failed to reach the target point
+* explain : The function starts from (x1, y1) and checks in each iteration whether there is a number around the number we are on, deletes the number we are on and continues to the next number, and so on until it reaches (x2, y2) if we could not reach (x2, y2 ) This is a sign that the drawing we made did not work and the line was not created correctly between the two points and that means the slope was "too deep" and the number failed to reach the target point , then checked whether the number of steps is equal to the maximum number of the difference between the length and width of a sign that it has drawn a line in the best way.
 * output : true/false if have line between 2 points and if the draw_line work properly.
 
 ` pair<int,int> check_if_around(picture<T> & r,int x,int y) `
