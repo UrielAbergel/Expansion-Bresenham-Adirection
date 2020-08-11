@@ -138,7 +138,7 @@ Case 6 : In this case, an automatic test of 100,000 random tests is performed, w
   
   
 # Sources
-* [wiki](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+* [wiki]( https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
 * [doctest](https://github.com/onqtam/doctest)
 
 
