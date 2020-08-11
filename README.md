@@ -123,11 +123,17 @@ Example :
 
 			
 Division into cases of tests :
+
 Case 1 : Checking whether an exception is thrown when bad values are entered into a function
+
 Case 2 : Checking whether an exception is thrown when different values or external classes are entered in the constructor <T>
+	
 Case 3 : Check draw_line when the slope is positive
+
 Case 4 : Check draw_line when the slope is negative
+
 Case 5 : Check when there is a straight line lengthwise and widthwise
+
 Case 6 : In this case, an automatic test of 100,000 random tests is performed, when 4 random numbers (x1, y1, x2, y2) are selected, and a random image size is selected, and in each iteration the numbers are checked by the test function, and in each case a test is performed, at the beginning of writing the code I started with 20 iterations and so on, until I discovered the mistakes and improved the algorithm so that it would work for any random case.
   
   
