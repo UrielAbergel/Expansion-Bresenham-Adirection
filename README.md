@@ -6,7 +6,8 @@
 I implemented the class using vectors, I used vectors because they are "familiar" objects in C ++, allows copying, deleting & iterators already built into the language. Also to expand the above class, I will add that using a vector allows you to access all the algorithms built into C ++ by sending Begin & End and create iterators without self-realization. However vectors take up more space on memory than a standard array that takes up  exactly the space of assignment.
 
 ### Explain the class :
-The class I built is a generic class that can accept any object, In the implementation I created, I added class-unique operators such as - , [ ]  , == , to make it easier for the user to compare, subtract, and access values in a particular location.                                                                                                  However if you want to use operettas for self-realization, the typename that the class receives must have the operettas -, ==.
+The class I built is a generic class that can accept any object, In the implementation I created, I added class-unique operators such as - , [ ]  , == , to make it easier for the user to compare, subtract, and access values in a particular location.                                                           However if you want to use operettas for self-realization or Insert a class that is not built into c ++, **the typename that the class receives must have the operettas -, ==.**
+
 ### Makefile:
 To make it easier for the user with compile, I built a Makefile that builds the program and returns two executables the first is a demo and the second is  test The first is a file showing the user how to use the class and the second is an executable of the tests including a score of how many passed and how not.
     
